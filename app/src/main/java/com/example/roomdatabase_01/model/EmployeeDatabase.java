@@ -22,8 +22,7 @@ public abstract class EmployeeDatabase extends RoomDatabase {
     public static EmployeeDatabase getInstance(Context context) {
         if (employeeDatabase == null) {
             employeeDatabase = Room.databaseBuilder(context, EmployeeDatabase.class, "Room_DB")
-                    .addMigrations(MIGRATION_2_3)
-                    .fallbackToDestructiveMigrationFrom(1)
+                    .fallbackToDestructiveMigrationFrom(1,2)
                     .build();
         }
         return employeeDatabase;
