@@ -22,6 +22,9 @@ public class EmployeeEntity {
     @ColumnInfo(name = "otherInfo")
     private String other;
 
+    @ColumnInfo(name = "position")
+    private String position;
+
 
     public EmployeeEntity() {
 
@@ -63,5 +66,13 @@ public class EmployeeEntity {
 
     public void setOther(String other) {
         this.other = other;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 }
