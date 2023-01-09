@@ -19,9 +19,6 @@ public class EmployeeEntity {
     @ColumnInfo(name = "mobileNumber")
     private String mobileNumber;
 
-    @ColumnInfo(name = "otherInfo")
-    private String other;
-
 
     public EmployeeEntity() {
 
