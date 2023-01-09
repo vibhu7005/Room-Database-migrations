@@ -13,7 +13,7 @@ public abstract class EmployeeDatabase extends RoomDatabase {
     static final Migration MIGRATION_2_3 = new Migration(2, 3) {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
-            database.execSQL("ALTER TABLE `Employee-Db` ADD COLUMN `position` INTEGER");
+            database.execSQL("ALTER TABLE 'Employee-Db' ADD COLUMN 'position' TEXT");
         }
     };
     public abstract EmployeeDao getEmployeeDao() ;
